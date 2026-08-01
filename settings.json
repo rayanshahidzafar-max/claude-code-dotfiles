@@ -11,6 +11,12 @@
         "source": "git",
         "url": "https://github.com/ayghri/i-have-adhd.git"
       }
+    },
+    "banana-claude-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "AgriciDaniel/banana-claude"
+      }
     }
   },
   "tui": "fullscreen",
