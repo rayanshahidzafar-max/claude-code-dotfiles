@@ -5,11 +5,18 @@
         "source": "git",
         "url": "https://github.com/zarazhangrui/frontend-slides.git"
       }
+    },
+    "i-have-adhd": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/ayghri/i-have-adhd.git"
+      }
     }
   },
   "tui": "fullscreen",
   "skipDangerousModePermissionPrompt": true,
   "enabledPlugins": {
-    "frontend-slides@frontend-slides": true
+    "frontend-slides@frontend-slides": true,
+    "i-have-adhd@i-have-adhd": true
   }
 }
