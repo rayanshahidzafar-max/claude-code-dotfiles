@@ -17,6 +17,12 @@
         "source": "github",
         "repo": "AgriciDaniel/banana-claude"
       }
+    },
+    "designer-skills": {
+      "source": {
+        "source": "github",
+        "repo": "Owl-Listener/designer-skills"
+      }
     }
   },
   "tui": "fullscreen",
