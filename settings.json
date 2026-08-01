@@ -23,6 +23,7 @@
   "skipDangerousModePermissionPrompt": true,
   "enabledPlugins": {
     "frontend-slides@frontend-slides": true,
-    "i-have-adhd@i-have-adhd": true
+    "i-have-adhd@i-have-adhd": true,
+    "banana-claude@banana-claude-marketplace": true
   }
 }
