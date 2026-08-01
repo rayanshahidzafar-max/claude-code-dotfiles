@@ -5,11 +5,13 @@ Personal Claude Code configuration, kept here so it can be restored on any devic
 ## What's here
 
 - `settings.json` — global Claude Code settings: extra plugin marketplaces and which plugins are enabled.
+- `.agents/skills/` — project-local skills installed via the [`skills` CLI](https://github.com/anthropics/skills) (`npx skills add <repo> --skill <name>`); `.claude/skills/` symlinks into it and `skills-lock.json` pins the installed versions.
 
 Deliberately **not** included (machine-specific or sensitive, and not needed for setup):
 - `.credentials.json` — OAuth token, never sync this
 - `history.jsonl`, `cache/`, `plugins/cache`, `plugins/marketplaces` — local caches, rebuilt automatically
 - `plugins/installed_plugins.json`, `plugins/known_marketplaces.json` — contain absolute local install paths
+- `.claude/settings.local.json` — per-machine local permissions, gitignored globally
 
 ## Setting up a new device
 
@@ -27,6 +29,8 @@ Deliberately **not** included (machine-specific or sensitive, and not needed for
 ## Updating this repo
 
 After installing/enabling a new plugin locally, copy the updated `settings.json` back into this repo and commit.
+
+After adding a project-local skill with `npx skills add <repo> --skill <name>`, commit the resulting `.agents/skills/<name>/`, `.claude/skills/<name>` symlink, and updated `skills-lock.json`.
 
 ## Note on "cloud" sync
 
