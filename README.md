@@ -5,6 +5,8 @@ Personal Claude Code configuration, kept here so it can be restored on any devic
 ## What's here
 
 - `settings.json` — global Claude Code settings: extra plugin marketplaces and which plugins are enabled.
+- `skills/` — seven fiction-writing skills built from seven craft books with a 70/30 rule (see [`skills/README.md`](skills/README.md)).
+- `tools/check_70_30.py` — verifies each skill's 70/30 source ratio and ledger.
 
 Deliberately **not** included (machine-specific or sensitive, and not needed for setup):
 - `.credentials.json` — OAuth token, never sync this
@@ -23,6 +25,26 @@ Deliberately **not** included (machine-specific or sensitive, and not needed for
    /plugin marketplace add <git-url-from-extraKnownMarketplaces>
    /plugin enable <plugin-name>
    ```
+
+## Writing skills
+
+Install the skills by copying each skill directory into your personal skills folder. Claude Code picks them up in every project.
+
+macOS/Linux (from the repo root):
+```bash
+mkdir -p ~/.claude/skills
+for d in skills/*/; do cp -R "${d%/}" ~/.claude/skills/; done
+```
+
+Windows PowerShell (from the repo root):
+```powershell
+New-Item -ItemType Directory -Force "$HOME\.claude\skills" | Out-Null
+Get-ChildItem .\skills -Directory | ForEach-Object { Copy-Item $_.FullName "$HOME\.claude\skills" -Recurse -Force }
+```
+
+Re-run the same command after pulling updates. After editing a skill, run `python3 tools/check_70_30.py --write` to refresh its source ledger, then `python3 tools/check_70_30.py` to confirm the 70/30 ratio still holds.
+
+For cloud sessions (claude.ai/code), personal skills in `~/.claude/skills/` aren't available. Commit the skill directories to the project's own `.claude/skills/` instead; the `cybertron-chronicles` repo does this.
 
 ## Updating this repo
 
