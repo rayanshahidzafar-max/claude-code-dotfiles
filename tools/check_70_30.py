@@ -9,6 +9,10 @@ SKILL.md plus references/*.md, skips the "Where the books disagree" section
 supplies 70% (+/- 5) of the tagged principles. It also checks the counts in
 each skill's "Source ledger" table, so the ledger can't drift from the text.
 
+A router skill (marked <!-- router ... -->) only fires other skills. It must
+carry no source tags at all, because a router that states principles would
+dodge the 70/30 rule.
+
 Usage: python3 tools/check_70_30.py [--write] [skills_dir]
   --write  rewrite each skill's "Source ledger" table from the counted tags
 Exit code 1 if any skill fails.
@@ -20,6 +24,7 @@ from pathlib import Path
 BOOKS = ["McKee", "Cron", "King", "McPhee", "Klinkenborg", "S&W", "Diamond"]
 TAG = re.compile(r"\[(McKee|Cron|King|McPhee|Klinkenborg|S&W|Diamond)\b[^\]]*\]")
 SPINE = re.compile(r"<!--\s*spine:\s*(\S+)\s*-->")
+ROUTER = re.compile(r"<!--\s*router\b")
 LEDGER_ROW = re.compile(r"^\|\s*(?P<book>[^|]+?)\s*\|\s*(?P<role>Spine|Support)\s*\|\s*(?P<n>\d+)")
 LEDGER_NAMES = {"McKee": "McKee", "Cron": "Cron", "King": "King", "McPhee": "McPhee",
                 "Klinkenborg": "Klinkenborg", "Strunk": "S&W", "Diamond": "Diamond"}
@@ -92,6 +97,12 @@ def main():
     print(f"{'skill':<16} {'spine':<12} {'spine':>5} {'total':>5} {'share':>6}  support")
     for skill_dir in sorted(p for p in skills_dir.iterdir() if (p / "SKILL.md").exists()):
         skill_md = skill_dir / "SKILL.md"
+        if ROUTER.search(skill_md.read_text(encoding="utf-8")):
+            tags = sum(count_tags(skill_dir).values())
+            status = "OK (routes only, no principles)" if tags == 0 else f"FAIL: router carries {tags} source tags"
+            failures += bool(tags)
+            print(f"{skill_dir.name:<16} {'router':<12} {'-':>5} {tags:>5} {'-':>6}  {status}")
+            continue
         spine_match = SPINE.search(skill_md.read_text(encoding="utf-8"))
         if not spine_match:
             print(f"{skill_dir.name:<16} no <!-- spine: ... --> marker")

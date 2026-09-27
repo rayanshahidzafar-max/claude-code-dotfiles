@@ -1,6 +1,6 @@
 # Writing skills — seven books, 70/30
 
-Seven Claude Code skills for writing fiction, built entirely from seven books. Each skill has one **spine** book that supplies about 70% of its principles. The other books supply the remaining 30% as **support**, wherever they sharpen or challenge the spine.
+Seven Claude Code skills for writing fiction, built entirely from seven books, plus one front door, `writers-room`, that fires them together with the social, persuasion and video skills. Each skill has one **spine** book that supplies about 70% of its principles. The other books supply the remaining 30% as **support**, wherever they sharpen or challenge the spine.
 
 | Skill | Spine (≈70%) | What it does |
 |---|---|---|
@@ -11,6 +11,17 @@ Seven Claude Code skills for writing fiction, built entirely from seven books. E
 | `revision-passes` | John McPhee, *Draft No. 4* | Revision in passes: structure, lead, boxes and dictionary, checkpoints, omission |
 | `sentence-craft` | Verlyn Klinkenborg, *Several Short Sentences About Writing* | Sentence by sentence: what it says, what it implies, rhythm, names of things |
 | `style-audit` | William Strunk Jr. & E. B. White, *The Elements of Style* | The final filter: usage, composition, White's reminders, misused words |
+
+## The front door: `writers-room`
+
+`writers-room` is the one skill to reach for. It triggers on any story, any writing, or any social media hooks and material. It then:
+
+- sorts the job into lanes: STORY, WORLD, SOCIAL, PROSE, PERSUADE, VIDEO;
+- fires every skill in those lanes, plus an always-on core (`viral-hooks`, `style-audit`, and `anti-ai-writing` as the last pass);
+- settles the places where the skills disagree (em dashes, metaphor, hook vs. lead, "you" framing, reading level, real vs. invented);
+- ends with a **Skills fired** ledger showing what each skill did.
+
+It's a router: it holds no craft principles of its own, so the 70/30 check verifies that it carries no source tags. Besides the seven skills here, it calls skills from your claude.ai account (`viral-hooks`, `storytelling`, `dumbify`, `anti-ai-writing`, `storybrand`, `expert-secrets-playbook`, `sell-like-crazy`, `100m-offers`, `100m-money-models`, `seedance-shotlist-director`, `nonviolent-communication`, `habit-design`, `deep-work`). If one isn't installed where you run it, it skips that skill and says so.
 
 The pipeline order used by `story-forge` is:
 
@@ -42,6 +53,7 @@ Current counts:
 | story-forge | King | 68 / 95 | 71.6% |
 | style-audit | Strunk & White | 59 / 82 | 72.0% |
 | worldbuilding | Diamond | 67 / 97 | 69.1% |
+| writers-room | router | 0 tags | routes only |
 
 ## Installing
 
@@ -49,4 +61,4 @@ See the main [README](../README.md#writing-skills). Copy each skill directory in
 
 ## Relationship to other skills
 
-These skills are for fiction and long-form narrative. For social-media content, the existing `storytelling`, `viral-hooks` and `anti-ai-writing` skills are the right tools, and each skill's description says so to keep triggering clean.
+The seven book skills are for fiction and long-form prose, and each one's description points social-media work to `storytelling`, `viral-hooks` and `anti-ai-writing`. That keeps each skill's own triggering clean. `writers-room` is where they meet: it brings the book skills and the social skills into the same job, each with a defined role.
