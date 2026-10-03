@@ -5,7 +5,7 @@ Personal Claude Code configuration, kept here so it can be restored on any devic
 ## What's here
 
 - `settings.json` — global Claude Code settings: extra plugin marketplaces and which plugins are enabled.
-- `skills/` — seven fiction-writing skills built from seven craft books with a 70/30 rule, plus `writers-room`, one front door that fires them together with your social, persuasion and video skills (see [`skills/README.md`](skills/README.md)).
+- `skills/` — ten writing skills built from ten books with a 70/30 rule (seven craft books for stories, three on writing series), plus two front doors that fire them together with your social, persuasion and video skills: `writers-room` for any writing job, and `series-forge` for sequels, prequels and continuations (see [`skills/README.md`](skills/README.md)).
 - `tools/check_70_30.py` — verifies each skill's 70/30 source ratio and ledger.
 
 Deliberately **not** included (machine-specific or sensitive, and not needed for setup):

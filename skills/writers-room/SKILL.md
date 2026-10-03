@@ -1,6 +1,6 @@
 ---
 name: writers-room
-description: One door to every writing skill. For any story, any writing, or any social media hooks and material, it fires the whole team in the right order and settles their conflicts — social (viral-hooks, storytelling, dumbify, anti-ai-writing), story and writing (story-forge, worldbuilding, story-design, reader-brain, revision-passes, sentence-craft, style-audit), persuasion (storybrand, expert-secrets-playbook, sell-like-crazy, 100m-offers, 100m-money-models) and video (seedance-shotlist-director). Use this FIRST whenever the user asks for a story, chapter, scene, lore or world; an essay, article, email, bio, newsletter or script; reels, video scripts, hooks, captions, carousels, threads, posts, subject lines or ad copy; or wants any of that improved, even if they name only one skill or just say "write", "hook me" or "make content".
+description: One door to every writing skill. For any story, any writing, or any social media hooks and material, it fires the whole team in the right order and settles their conflicts — social (viral-hooks, storytelling, dumbify, anti-ai-writing), story and writing (story-forge, worldbuilding, story-design, reader-brain, revision-passes, sentence-craft, style-audit), series (series-forge, which runs series-doctor, series-engine and sequel-craft), persuasion (storybrand, expert-secrets-playbook, sell-like-crazy, 100m-offers, 100m-money-models) and video (seedance-shotlist-director). Use this FIRST whenever the user asks for a story, chapter, scene, sequel, prequel or series, lore or world; an essay, article, email, bio, newsletter or script; reels, video scripts, hooks, captions, carousels, threads, posts, subject lines or ad copy; or wants any of that improved, even if they name only one skill or just say "write", "hook me" or "make content".
 ---
 
 <!-- router: fires other skills and holds no craft principles of its own, so the 70/30 source check does not apply -->
@@ -29,11 +29,14 @@ Tag every lane the request touches. Most jobs touch one or two.
 | Lane | The job looks like |
 |---|---|
 | STORY | a story, chapter, scene, fan fiction, micro-fiction post, "write me a story about…" |
+| SERIES | a sequel, prequel, continuation, the next book or part, a spin-off, side story or crossover, an origin story, a series plan or series bible |
 | WORLD | a setting, faction, planet, history, lore bible, game world |
 | SOCIAL | hooks, reels, TikToks, video scripts, captions, carousels, threads, posts, newsletters, subject lines |
 | PROSE | essays, articles, blog posts, emails, bios, speeches, cover letters, "improve this writing" |
 | PERSUADE | anything that sells: ads, sales pages, pitches, offers, launches, funnels, brand one-liners |
 | VIDEO | turning a script, scene or story into shots for Seedance |
+
+A story that continues, precedes or branches off an existing one is SERIES, not STORY.
 
 "Everything," "full stack," "the works" or "the story plus the content" means **FULL STACK** (below).
 
@@ -50,6 +53,7 @@ Tag every lane the request touches. Most jobs touch one or two.
 | Lane | Order |
 |---|---|
 | STORY | `story-forge` runs the pipeline → `worldbuilding` → `story-design` (+ `storytelling`'s but/therefore test on the outline) → `reader-brain` → draft (+ `viral-hooks` first-line candidates) → `revision-passes` (+ `dumbify` clarity check) → `sentence-craft` → `style-audit` → `anti-ai-writing` (+ `storytelling`'s last-line test) |
+| SERIES | `series-forge` runs the job: `series-doctor`, `series-engine` and `sequel-craft` in its mode's order (sequel, prequel, continuation, spin-off, series plan) → the STORY stack above for the installment → its launch pack |
 | WORLD | `worldbuilding` → `story-design` (pressure points) → `reader-brain` → `sentence-craft` → `dumbify` (reader-facing entries) → `viral-hooks` (entry openers) → `style-audit` → `anti-ai-writing` |
 | SOCIAL | `story-design` + `reader-brain` (the turn and the stakes) → `storytelling` → `viral-hooks` → `dumbify` → `revision-passes` (cut ~10% if over ~150 words) → `sentence-craft` (written long-form only) → `style-audit` (light) → `anti-ai-writing` |
 | PROSE | `revision-passes` (structure, lead) → `storytelling` (if it tells a story) → `reader-brain` (narrative nonfiction) → `sentence-craft` → `dumbify` (if it explains or teaches) → `viral-hooks` (title, subject line, first line) → `style-audit` → `anti-ai-writing` |
@@ -86,6 +90,7 @@ The skills were written separately, and they sometimes disagree. The rulings in 
 - **"You" framing.** Social hooks only. Fiction never forces "you."
 - **Reading level.** `dumbify`'s targets apply to social, teaching and selling. In fiction it only flags sentences a reader must read twice.
 - **Invention.** Fiction invents; anything presented as real never does. `storytelling`, `anti-ai-writing` and every persuasion skill agree.
+- **Series jobs.** `series-forge`'s rulings (cliffhangers, recaps, vague canon vs. concrete prose, spoilers, prequel suspense) apply on top of these.
 - **Any other tie.** The skill closest to the deliverable wins: `viral-hooks` for a hook, `storytelling` for a spoken script, `story-design` for plot, `sentence-craft` for fiction sentences, `style-audit` for grammar in formal prose, `anti-ai-writing` for voice.
 
 ## Step 4 — Deliver

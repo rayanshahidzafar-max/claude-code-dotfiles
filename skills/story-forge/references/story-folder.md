@@ -24,10 +24,12 @@ IDEAL READER (a specific person, and what delights or bores them):
 THE SITUATION (what if…?):
 WHY THIS STORY NOW (what the writer can't stop thinking about):
 CONSTRAINTS (world, canon, names to avoid, rating):
+SERIES (installments only): the installment plan from sequel-craft, pasted here
 ```
 
 - The Ideal Reader is one person, named in the brief. Every later judgment about pace or clarity is made by imagining their reaction (see `door-open.md`).
 - The situation is the seed. Write it as a what-if, not a plot summary.
+- If the story is part of a series, `series-forge` fills the SERIES block: book number, the question this book answers and the one it asks, payoffs due, new plants, and the canon checks. Every station drafts against it.
 
 ## 04-draft-1.md
 

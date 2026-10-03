@@ -2,7 +2,7 @@
 """Check the 70/30 rule for every writing skill in skills/.
 
 Every principle in a skill carries a source tag naming the book it comes from,
-e.g. [McKee ch7], [S&W R17], [Diamond ch14]. Each SKILL.md declares its spine
+e.g. [McKee ch7], [S&W R17], [Diamond ch14], [Tomlinson ch4], [Rosett, Hooks]. Each SKILL.md declares its spine
 book in an HTML comment (<!-- spine: McKee -->). This script counts the tags in
 SKILL.md plus references/*.md, skips the "Where the books disagree" section
 (which names books without tagging them), and checks that the spine book
@@ -21,13 +21,15 @@ import re
 import sys
 from pathlib import Path
 
-BOOKS = ["McKee", "Cron", "King", "McPhee", "Klinkenborg", "S&W", "Diamond"]
-TAG = re.compile(r"\[(McKee|Cron|King|McPhee|Klinkenborg|S&W|Diamond)\b[^\]]*\]")
+BOOKS = ["McKee", "Cron", "King", "McPhee", "Klinkenborg", "S&W", "Diamond",
+         "Rosett", "Tomlinson", "Scheuerer"]
+TAG = re.compile(r"\[(McKee|Cron|King|McPhee|Klinkenborg|S&W|Diamond|Rosett|Tomlinson|Scheuerer)\b[^\]]*\]")
 SPINE = re.compile(r"<!--\s*spine:\s*(\S+)\s*-->")
 ROUTER = re.compile(r"<!--\s*router\b")
 LEDGER_ROW = re.compile(r"^\|\s*(?P<book>[^|]+?)\s*\|\s*(?P<role>Spine|Support)\s*\|\s*(?P<n>\d+)")
 LEDGER_NAMES = {"McKee": "McKee", "Cron": "Cron", "King": "King", "McPhee": "McPhee",
-                "Klinkenborg": "Klinkenborg", "Strunk": "S&W", "Diamond": "Diamond"}
+                "Klinkenborg": "Klinkenborg", "Strunk": "S&W", "Diamond": "Diamond",
+                "Rosett": "Rosett", "Tomlinson": "Tomlinson", "Scheuerer": "Scheuerer"}
 TITLES = {
     "McKee": "Robert McKee, *Story*",
     "Cron": "Lisa Cron, *Wired for Story*",
@@ -36,6 +38,9 @@ TITLES = {
     "Klinkenborg": "Verlyn Klinkenborg, *Several Short Sentences About Writing*",
     "S&W": "William Strunk Jr. & E. B. White, *The Elements of Style*",
     "Diamond": "Jared Diamond, *Guns, Germs, and Steel*",
+    "Rosett": "Sara Rosett, *How to Write a Series*",
+    "Tomlinson": "Paul Tomlinson, *Writing a Series*",
+    "Scheuerer": "Helen B. Scheuerer, *How to Write a Successful Series*",
 }
 LOW, HIGH = 65.0, 75.0
 

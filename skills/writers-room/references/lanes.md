@@ -25,6 +25,14 @@ Every lane lists its skills in firing order, with the one job each does here. Th
    - **`storytelling`** returns for one test: is the last line strong enough to be quoted alone?
 10. **On request, or in FULL STACK:** the SOCIAL pack and the VIDEO lane, built from the finished story.
 
+## SERIES — sequels, prequels, continuations, spin-offs, series plans
+
+1. **`series-forge`** takes the job. It finds the canon (reading earlier installments in full), opens the series folder (`stories/series/<slug>/`), and names the mode: SEQUEL, PREQUEL, CONTINUATION, SPIN-OFF or SERIES PLAN.
+2. **`series-doctor`**, **`series-engine`** and **`sequel-craft`** run in the mode's order. Between them they produce the checkup, the series outline and bible, the installment plan, the loop ledger and the reader path.
+3. **The STORY lane** runs on the installment, with the installment plan as the SERIES block of `00-brief.md`. Each station gets a series duty: world facts checked against the bible, a reader check as newcomer and as returning reader, a continuity pass, fresh wording for recaps, and the last page tested as a hook.
+4. **The launch pack** (on by default in `series-forge`): series line and blurb, back-matter teaser and reading order, social pack, Seedance shotlist, and a reader gift or offer only when there's something to give or sell.
+5. **`style-audit`**, then **`anti-ai-writing`**, as always.
+
 ## WORLD — settings, factions, histories, lore bibles, game worlds
 
 1. **`worldbuilding`**. The dossier, with pressure points.
