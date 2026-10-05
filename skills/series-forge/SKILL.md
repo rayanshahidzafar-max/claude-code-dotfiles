@@ -1,6 +1,6 @@
 ---
 name: series-forge
-description: The continuation, sequel and prequel builder. For any job that continues, extends or branches a story, it fires the three series skills (series-doctor, series-engine, sequel-craft) together with the whole writing team (story-forge, worldbuilding, story-design, reader-brain, revision-passes, sentence-craft, style-audit) and the social, persuasion and video skills (viral-hooks, storytelling, dumbify, anti-ai-writing, storybrand, sell-like-crazy, 100m-offers, seedance-shotlist-director), keeps the series canon in one folder, and settles their conflicts. Use it whenever someone asks for a sequel, prequel, part two, the next book, episode or chapter in a series, a continuation of an existing story, "what happens next", an origin story or backstory novella, a spin-off, side story or crossover, a trilogy, saga or season plan, a series bible or canon check, or wants to turn a standalone story into a series.
+description: The continuation, sequel and prequel builder. For any job that continues, extends or branches a story, it fires the three series skills (series-doctor, series-engine, sequel-craft) together with the whole writing team (story-forge, worldbuilding, story-design, reader-brain, revision-passes, sentence-craft, style-audit, plus suspense-craft, cosmic-horror or uncanny-craft by genre, and title-craft for series and book titles) and the social, persuasion and video skills (viral-hooks, storytelling, dumbify, anti-ai-writing, storybrand, sell-like-crazy, 100m-offers, seedance-shotlist-director), keeps the series canon in one folder, and settles their conflicts. Use it whenever someone asks for a sequel, prequel, part two, the next book, episode or chapter in a series, a continuation of an existing story, "what happens next", an origin story or backstory novella, a spin-off, side story or crossover, a trilogy, saga or season plan, a series bible or canon check, or wants to turn a standalone story into a series.
 ---
 
 <!-- router: fires other skills and holds no craft principles of its own, so the 70/30 source check does not apply -->
@@ -46,7 +46,7 @@ The three series skills run first, in the mode's order. Each skill's exact job i
 | PREQUEL | `series-engine` (the canon timeline: what's fixed) → `sequel-craft` (prequel method, installment plan) → `series-doctor` (its place on the reader path) |
 | CONTINUATION | `series-doctor` (extend, relaunch or end?) → `series-engine` (the new arc or season; does the engine still run?) → `sequel-craft` (installment plan) |
 | SPIN-OFF | `series-doctor` (what carries over, and when) → `series-engine` (the spin-off's own pilot, inside the shared bible) → `sequel-craft` (links, spoiler-free references, installment plan) |
-| SERIES PLAN | `series-engine` (outline, engines, units, arcs, bible) → `series-doctor` (type and pattern check, exits, reader path) → `sequel-craft` (each book's question asked and answered; the first plants) |
+| SERIES PLAN | `series-engine` (outline, engines, units, arcs, bible) → `series-doctor` (type and pattern check, exits, reader path) → `sequel-craft` (each book's question asked and answered; the first plants) → `title-craft` (series name and book-title pattern) |
 
 ## Step 3 — Fire the writing team on the installment
 
@@ -55,6 +55,7 @@ When there's an installment to write, run the STORY lane, with `story-forge` run
 | Station | Skill | Series duty |
 |---|---|---|
 | 1 World | `worldbuilding` | only what's new or changed since the last book; every new fact checked against the bible |
+| 2 Design (genre) | `suspense-craft`, `cosmic-horror` or `uncanny-craft`, when the series has that genre | the genre sheet, kept consistent with the bible: the strange element's rules, the recurring investigator's methods, the dread's source |
 | 2 Design | `story-design` (+ `storytelling`'s but/therefore test) | the book's own spine, plus this book's segment of each long arc |
 | 3 Reader check | `reader-brain` | two reads: one as a newcomer starting here, one as a returning reader |
 | 4 Draft | `story-forge` (+ `viral-hooks` first-line candidates) | the ledger's due plants go in; nothing contradicts the canon |
@@ -69,7 +70,7 @@ Then update the canon: mark the ledger rows this book paid or opened, add new fa
 
 By default the forge also builds the material that sells the installment and moves readers along the path. "No launch pack" skips it.
 
-- **Series line and blurb.** `storybrand` writes the one-line promise, `storytelling` the blurb's story, and `viral-hooks` its first line; then `dumbify`, `style-audit`, `anti-ai-writing`. No spoilers for earlier books.
+- **Series line and blurb.** `title-craft` checks the book's title against the series pattern, `storybrand` writes the one-line promise, `storytelling` the blurb's story, and `viral-hooks` its first line; then `dumbify`, `style-audit`, `anti-ai-writing`. No spoilers for earlier books.
 - **Back-matter page.** The read-through hook or teaser for the next book and the reading order, from `sequel-craft` and `series-doctor`.
 - **Social pack.** Three hooks per platform, a 30–60 second reel script, carousel text and a caption (`viral-hooks`, `storytelling`, `dumbify`, `anti-ai-writing`).
 - **Video.** A Seedance shotlist for the reel (`seedance-shotlist-director`).

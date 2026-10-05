@@ -25,7 +25,7 @@ Each rule is paraphrased, followed by what to flag and an original example. Cite
   - Rule: use it after an independent clause to introduce a list, an appositive, an amplification or an illustrative quotation.
   - Flag: a colon wedged between a verb and its object: *The crew needed: water and fuel.* [S&W R7]
 - **R8. The dash.**
-  - Rule: use a dash for an abrupt break or interruption, or to announce a long appositive or summary. It's stronger than a comma, less formal than a colon, and more relaxed than parentheses.
+  - Rule: use a dash for an abrupt break or interruption, or to announce a long appositive or summary. It makes a heavier break than a comma, a lighter one than a colon, and a less fussy one than parentheses.
   - Use it only when the simpler marks won't do. [S&W R8]
 - **R9. Agreement.**
   - Rule: the number of the subject decides the number of the verb, whatever words come between them.

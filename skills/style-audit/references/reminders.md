@@ -2,11 +2,11 @@
 
 White's list from his chapter "An Approach to Style," paraphrased. Cite them in the audit report as V1–V21.
 
-1. **Place yourself in the background.** Draw attention to the sense and substance of the writing, not to the writer's mood or cleverness. [S&W V.1]
+1. **Place yourself in the background.** Point the reader at what the writing says, not at the writer's mood or cleverness. [S&W V.1]
 2. **Write naturally.** Use the words that come readily. Imitation while learning is inevitable, but never imitate on purpose. And don't assume what comes naturally is automatically good. [S&W V.2]
 3. **Work from a suitable design.** Even the most spontaneous-seeming writing has a plan underneath it. [S&W V.3]
 4. **Write with nouns and verbs.** Adjectives and adverbs can't rescue a weak or wrong noun. [S&W V.4]
-5. **Revise and rewrite.** Revising is part of writing. Big rearrangements are normal; keep the old version to compare. [S&W V.5]
+5. **Revise and rewrite.** Rewriting belongs to the job, not after it. Big rearrangements are normal; keep the old version to compare. [S&W V.5]
 6. **Don't overwrite.** Rich, ornate prose is hard to digest. The keyboard's easy flow tempts you on, so reread later and cut the excess. [S&W V.6]
 7. **Don't overstate.** One exaggeration makes the reader doubt everything else. A careless superlative can sink the very thing you're praising. [S&W V.7]
 8. **Avoid qualifiers.** "Rather," "very," "little," "pretty": they drain the words around them. [S&W V.8]

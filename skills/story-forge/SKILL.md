@@ -1,6 +1,6 @@
 ---
 name: story-forge
-description: End-to-end fiction-writing pipeline built on Stephen King's "On Writing" (supported by McKee, Cron, McPhee, Klinkenborg, Strunk & White and Diamond) — read a lot and write a lot, draft with the door closed, rest it, rewrite with the door open, second draft = first minus 10%. It runs the other craft skills as stations (worldbuilding → story-design → reader-brain → draft → revision-passes → sentence-craft → style-audit) and leaves every stage as a file in a story folder. Use it whenever someone wants a story actually written, not just discussed ("write me a story about…", "turn this idea into a short story", "let's do the next chapter", "draft this scene", "help me finish my draft"), when they are stuck or blocked mid-draft, or want a daily writing routine. Also the home of first-draft craft — narration, description, dialogue, character.
+description: End-to-end fiction-writing pipeline built on Stephen King's "On Writing" (supported by McKee, Cron, McPhee, Klinkenborg, Strunk & White and Diamond) — read a lot and write a lot, draft with the door closed, rest it, rewrite with the door open, second draft = first minus 10%. It runs the other craft skills as stations (worldbuilding → story-design → reader-brain → draft → revision-passes → sentence-craft → style-audit), adds suspense-craft, cosmic-horror or uncanny-craft when the brief names that genre, and leaves every stage as a file in a story folder. Use it whenever someone wants a story actually written, not just discussed ("write me a story about…", "turn this idea into a short story", "let's do the next chapter", "draft this scene", "help me finish my draft"), when they are stuck or blocked mid-draft, or want a daily writing routine. Also the home of first-draft craft — narration, description, dialogue, character.
 ---
 
 <!-- spine: King -->
@@ -24,9 +24,10 @@ First, tell yourself the story with the door closed. Then, with the door open, t
    - Open the world through one person in one concrete situation, and let the larger forces show through that person's problem. [Diamond, Prologue]
 2. **Design** (`02-design.md`).
    - Start from a situation, often a what-if, put characters in it, and ask how they'll get free. [King, On Writing]
+   - If the brief's genre calls for it, run the genre skill first: `suspense-craft` for suspense, crime and mystery; `cosmic-horror` for cosmic or eldritch horror; `uncanny-craft` for the uncanny, the weird and ghost stories. Its sheet goes at the top of `02-design.md`, and the design honours it.
    - Then run `story-design` to fix only the load-bearing events: desire, inciting incident, crisis, climax. [McKee ch19]
    - Leave the route between those events open for the draft to discover. The story is a found thing, dug up with care. It isn't assembled. [King, On Writing]
-3. **Reader check** (`03-reader-check.md`). Run `reader-brain` on the design: the first-page test and the one-sentence focus. Fix the design, not the prose. [Cron ch2]
+3. **Reader check** (`03-reader-check.md`). Run `reader-brain` on the design (and against the genre sheet, if there is one): the first-page test and the one-sentence focus. Fix the design, not the prose. [Cron ch2]
 4. **First draft, door closed** (`04-draft-1.md`).
    - Write it straight through, as fast as is comfortable, to stay ahead of doubt.
    - Don't stop to polish, research or decide what it means. The first draft is the wrong place to think about meaning. [King, On Writing]
@@ -41,8 +42,9 @@ First, tell yourself the story with the door closed. Then, with the door open, t
    - Rewrite to make the story's point clearer. Cut what belongs to some other story. [King, On Writing]
    - Hit the formula: the second draft equals the first minus ten percent. [King, On Writing]
    - Run `revision-passes` for the structural, lead, frame-of-reference, continuity and omission passes.
+   - If a genre skill ran at station 2, run its revision checks too: the plausibility log and fair clues (`suspense-craft`), no back door and no vague horror adjectives (`cosmic-horror`), the strange left open and the human outcome closed (`uncanny-craft`).
 8. **Sentence pass.** Run `sentence-craft` on the second draft.
-9. **Polish** (`08-final.md`). Run `style-audit` as the last filter, then write the final title. Placeholder titles get replaced here. [King, And Furthermore]
+9. **Polish** (`08-final.md`). Run `style-audit` as the last filter, then write the final title with `title-craft`. Placeholder titles get replaced here. [King, And Furthermore]
 10. **Door open to readers.** Give the final draft to the Ideal Reader first, then to a few trusted readers. If one reader dislikes something, the tie goes to the writer. If everyone flags the same spot, fix it. [King, On Writing]
 
 Two drafts and a polish is the default shape. [King, On Writing] A draft that's still broken after the second pass goes back to station 2, not forward to station 8.
