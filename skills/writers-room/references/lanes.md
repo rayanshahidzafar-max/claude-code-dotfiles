@@ -67,6 +67,9 @@ These aren't lanes of their own. They ride on STORY and SERIES jobs, and on fict
 ## SOCIAL — hooks, reels, captions, carousels, threads, posts, newsletters
 
 0. **Setup:** load the client or person operating skill if one applies, and find a voice sample (see SKILL.md).
+   - **`platform-native`**: pick the native format for the platform and decide whether the piece is a jab (gives) or a right hook (asks).
+   - **`contagious-content`**: a quick STEPPS score; the piece must hit at least two principles.
+   - A whole calendar or campaign goes to `marketing-head` instead.
 1. **`story-design`** + **`reader-brain`**. A two-minute pass for narrative pieces:
    - whose story it is;
    - what they wanted;
@@ -110,6 +113,7 @@ These aren't lanes of their own. They ride on STORY and SERIES jobs, and on fict
    - **`name-craft`** joins when a company, brand, product or program needs a name. The offer package's own name stays with `100m-offers`.
 4. **`100m-money-models`**. When offers come in sequence: upsell, downsell, continuity.
 5. **`sell-like-crazy`**. Funnel stage and traffic temperature: the lead magnet, the call to action, the follow-up.
+   - **`slippery-copy`**: the copy sheet for the body. Short first sentence, the yes-statements, the question sequence, the objection resolved, the edit pass.
 6. **`storytelling`**. The story inside the pitch (reels, sales videos, founder stories).
 7. **`viral-hooks`**. The headline or hook.
 8. **`dumbify`**. Reading level.

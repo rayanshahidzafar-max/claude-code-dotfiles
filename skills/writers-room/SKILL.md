@@ -39,6 +39,8 @@ Tag every lane the request touches. Most jobs touch one or two.
 
 A story that continues, precedes or branches off an existing one is SERIES, not STORY.
 
+**Marketing jobs go to the head.** If the job is marketing beyond one finished piece (a strategy, campaign, launch, content calendar, growth or referral plan, community, funnel or offer), hand it to `marketing-head`, which runs the marketing room and calls this room back for long-form writing. A single post, caption or ad stays here, and the SOCIAL and PERSUADE stacks borrow `platform-native`, `contagious-content` and `slippery-copy` as listed below.
+
 **Genre add-ons.** A STORY or SERIES job also gets a genre tag when the request or the brief names one:
 - suspense, thriller, crime, mystery, whodunit, detective, heist or noir → `suspense-craft`;
 - cosmic, eldritch or Lovecraftian horror, forbidden knowledge or existential dread → `cosmic-horror`;
@@ -63,9 +65,9 @@ Plain "horror" takes `cosmic-horror` when the dread comes from the nature of thi
 | STORY | `story-forge` runs the pipeline → `worldbuilding` → the genre add-on, if tagged (its sheet) → `story-design` (+ `storytelling`'s but/therefore test on the outline) → `reader-brain` → draft (+ `viral-hooks` first-line candidates) → `revision-passes` (+ `dumbify` clarity check, + the genre add-on's checks) → `sentence-craft` → `style-audit` (+ `title-craft` for the final title) → `anti-ai-writing` (+ `storytelling`'s last-line test) |
 | SERIES | `series-forge` runs the job: `series-doctor`, `series-engine` and `sequel-craft` in its mode's order (sequel, prequel, continuation, spin-off, series plan) → the STORY stack above for the installment → its launch pack |
 | WORLD | `worldbuilding` → `story-design` (pressure points) → `reader-brain` → `sentence-craft` → `dumbify` (reader-facing entries) → `viral-hooks` (entry openers) → `style-audit` → `anti-ai-writing` |
-| SOCIAL | `story-design` + `reader-brain` (the turn and the stakes) → `storytelling` → `viral-hooks` → `dumbify` → `revision-passes` (cut ~10% if over ~150 words) → `sentence-craft` (written long-form only) → `style-audit` (light) → `anti-ai-writing` |
+| SOCIAL | `platform-native` (native format, jab or right hook) → `contagious-content` (STEPPS, hit two) → `story-design` + `reader-brain` (the turn and the stakes) → `storytelling` → `viral-hooks` → `dumbify` → `revision-passes` (cut ~10% if over ~150 words) → `sentence-craft` (written long-form only) → `style-audit` (light) → `anti-ai-writing` |
 | PROSE | `revision-passes` (structure, lead) → `storytelling` (if it tells a story) → `reader-brain` (narrative nonfiction) → `sentence-craft` → `dumbify` (if it explains or teaches) → `viral-hooks` (title, subject line, first line) → `style-audit` → `anti-ai-writing` |
-| PERSUADE | `storybrand` → `expert-secrets-playbook` → `100m-offers` (if there's an offer) → `100m-money-models` (if offers are sequenced) → `sell-like-crazy` (funnel stage, CTA) → `storytelling` → `viral-hooks` → `dumbify` → `style-audit` → `anti-ai-writing` |
+| PERSUADE | `storybrand` → `expert-secrets-playbook` → `100m-offers` (if there's an offer) → `100m-money-models` (if offers are sequenced) → `sell-like-crazy` (funnel stage, CTA) → `slippery-copy` (copy sheet) → `storytelling` → `viral-hooks` → `dumbify` → `style-audit` → `anti-ai-writing` |
 | VIDEO | `storytelling` (script) → `viral-hooks` (visual hook) → `dumbify` → `anti-ai-writing` (spoken subset) → `seedance-shotlist-director` |
 | NAME | `name-craft` for names of things, or `title-craft` for titles of works (books, chapters, series, articles, videos, newsletters) → `style-audit` (light: spelling, capitals, italics) → `anti-ai-writing` (on the rationale and any tagline) |
 

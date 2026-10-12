@@ -3,7 +3,8 @@
 
 Every principle in a skill carries a source tag naming the book it comes from,
 e.g. [McKee ch7], [S&W R17], [S&W 1918 R9], [Diamond ch14], [Tomlinson ch4], [Rosett, Hooks],
-[Highsmith ch5], [Ligotti, Atmosphere], [Uncanny, Royle], [Watkins ch2], [Edwards S6].
+[Highsmith ch5], [Ligotti, Atmosphere], [Uncanny, Royle], [Watkins ch2], [Edwards S6],
+[Eyal ch2], [Vaynerchuk R2], [Kane ch3], [Sugarman ch8], [Berger ch1], [Schaefer ch7], [Ellis ch4].
 Each SKILL.md declares its spine
 book in an HTML comment (<!-- spine: McKee -->). This script counts the tags in
 SKILL.md plus references/*.md, skips the "Where the books disagree" section
@@ -25,9 +26,11 @@ from pathlib import Path
 
 BOOKS = ["McKee", "Cron", "King", "McPhee", "Klinkenborg", "S&W", "Diamond",
          "Rosett", "Tomlinson", "Scheuerer", "Highsmith", "Ligotti", "Uncanny",
-         "Watkins", "Edwards"]
+         "Watkins", "Edwards", "Eyal", "Vaynerchuk", "Kane", "Sugarman", "Berger",
+         "Schaefer", "Ellis"]
 TAG = re.compile(r"\[(McKee|Cron|King|McPhee|Klinkenborg|S&W|Diamond|Rosett|Tomlinson|Scheuerer"
-                 r"|Highsmith|Ligotti|Uncanny|Watkins|Edwards)\b[^\]]*\]")
+                 r"|Highsmith|Ligotti|Uncanny|Watkins|Edwards|Eyal|Vaynerchuk|Kane|Sugarman|Berger"
+                 r"|Schaefer|Ellis)\b[^\]]*\]")
 SPINE = re.compile(r"<!--\s*spine:\s*(\S+)\s*-->")
 ROUTER = re.compile(r"<!--\s*router\b")
 LEDGER_ROW = re.compile(r"^\|\s*(?P<book>[^|]+?)\s*\|\s*(?P<role>Spine|Support)\s*\|\s*(?P<n>\d+)")
@@ -35,7 +38,9 @@ LEDGER_NAMES = {"McKee": "McKee", "Cron": "Cron", "King": "King", "McPhee": "McP
                 "Klinkenborg": "Klinkenborg", "Strunk": "S&W", "Diamond": "Diamond",
                 "Rosett": "Rosett", "Tomlinson": "Tomlinson", "Scheuerer": "Scheuerer",
                 "Highsmith": "Highsmith", "Ligotti": "Ligotti", "Uncanny": "Uncanny",
-                "Watkins": "Watkins", "Edwards": "Edwards"}
+                "Watkins": "Watkins", "Edwards": "Edwards", "Eyal": "Eyal",
+                "Vaynerchuk": "Vaynerchuk", "Kane": "Kane", "Sugarman": "Sugarman",
+                "Berger": "Berger", "Schaefer": "Schaefer", "Ellis": "Ellis"}
 TITLES = {
     "McKee": "Robert McKee, *Story*",
     "Cron": "Lisa Cron, *Wired for Story*",
@@ -52,6 +57,13 @@ TITLES = {
     "Uncanny": "Dan Coxon & Richard V. Hirst (eds.), *Writing the Uncanny*",
     "Watkins": "Alexandra Watkins, *Hello, My Name Is Awesome*",
     "Edwards": "Jim Edwards, *Copywriting Secrets*",
+    "Eyal": "Nir Eyal, *Hooked*",
+    "Vaynerchuk": "Gary Vaynerchuk, *Jab, Jab, Jab, Right Hook*",
+    "Kane": "Brendan Kane, *One Million Followers*",
+    "Sugarman": "Joseph Sugarman, *The Adweek Copywriting Handbook*",
+    "Berger": "Jonah Berger, *Contagious*",
+    "Schaefer": "Mark W. Schaefer, *Belonging to the Brand*",
+    "Ellis": "Sean Ellis & Morgan Brown, *Hacking Growth*",
 }
 LOW, HIGH = 65.0, 75.0
 
@@ -110,18 +122,18 @@ def main():
     write = "--write" in sys.argv[1:]
     skills_dir = Path(args[0] if args else Path(__file__).resolve().parent.parent / "skills")
     failures = 0
-    print(f"{'skill':<16} {'spine':<12} {'spine':>5} {'total':>5} {'share':>6}  support")
+    print(f"{'skill':<20} {'spine':<12} {'spine':>5} {'total':>5} {'share':>6}  support")
     for skill_dir in sorted(p for p in skills_dir.iterdir() if (p / "SKILL.md").exists()):
         skill_md = skill_dir / "SKILL.md"
         if ROUTER.search(skill_md.read_text(encoding="utf-8")):
             tags = sum(count_tags(skill_dir).values())
             status = "OK (routes only, no principles)" if tags == 0 else f"FAIL: router carries {tags} source tags"
             failures += bool(tags)
-            print(f"{skill_dir.name:<16} {'router':<12} {'-':>5} {tags:>5} {'-':>6}  {status}")
+            print(f"{skill_dir.name:<20} {'router':<12} {'-':>5} {tags:>5} {'-':>6}  {status}")
             continue
         spine_match = SPINE.search(skill_md.read_text(encoding="utf-8"))
         if not spine_match:
-            print(f"{skill_dir.name:<16} no <!-- spine: ... --> marker")
+            print(f"{skill_dir.name:<20} no <!-- spine: ... --> marker")
             failures += 1
             continue
         spine = spine_match.group(1)
@@ -140,7 +152,7 @@ def main():
             problems.append(f"ledger {ledger} != counted {actual}")
         status = "OK" if not problems else "FAIL: " + "; ".join(problems)
         failures += bool(problems)
-        print(f"{skill_dir.name:<16} {spine:<12} {counts[spine]:>5} {total:>5} {share:>5.1f}%  {support}  {status}")
+        print(f"{skill_dir.name:<20} {spine:<12} {counts[spine]:>5} {total:>5} {share:>5.1f}%  {support}  {status}")
     sys.exit(1 if failures else 0)
 
 

@@ -1,11 +1,12 @@
-# Writing skills — fifteen books, 70/30
+# Writing and marketing skills — twenty-two books, 70/30
 
-Fifteen Claude Code skills built entirely from fifteen books, plus two front doors:
+Twenty-two Claude Code skills built entirely from twenty-two books, plus three front doors:
 
 - `writers-room` fires the whole team for any writing job.
 - `series-forge` builds sequels, prequels and continuations.
+- `marketing-head` runs the marketing room for any marketing, sales or social media job.
 
-Each book skill has one **spine** book that supplies about 70% of its principles. The other fourteen books supply the remaining 30% as **support**, wherever they sharpen or challenge the spine.
+Each book skill has one **spine** book that supplies about 70% of its principles. Other books supply the remaining 30% as **support**, wherever they sharpen or challenge the spine.
 
 ## The story skills (seven craft books)
 
@@ -46,6 +47,18 @@ Each genre skill writes a sheet into the story folder's `02-design.md` before `s
 
 `story-forge` runs `title-craft` at its final-title station. `series-forge` runs it when planning a series name and book-title pattern.
 
+## The marketing skills (seven books on virality, habits, growth, copy, platforms and community)
+
+| Skill | Spine (≈70%) | What it does |
+|---|---|---|
+| `contagious-content` | Jonah Berger, *Contagious* | Shareability: scores any piece on STEPPS (social currency, triggers, emotion, public, practical value, stories), makes it hit at least two, and hides the brand inside a story people can't retell without it. Writes the contagion sheet |
+| `habit-hooks` | Nir Eyal, *Hooked* | Retention: the Hook (trigger, action, variable reward, investment), internal triggers, re-hooks and open loops for series content ("part two"), and the manipulation matrix. Writes the hook map |
+| `audience-growth` | Brendan Kane, *One Million Followers* | Follower growth by testing: the hook point, 5–10+ variations per concept, hypothesize-test-pivot, targeting, sharers vs buyers, small paid tests, alliances and per-platform growth. Writes the variation sheet |
+| `slippery-copy` | Joseph Sugarman, *The Adweek Copywriting Handbook* | Copy and captions: the slippery slide, short first sentences, the buying environment, seeds of curiosity, the copy sequence, the 23 elements and 31 triggers, with Edwards' CTA, bullet and objection templates. Writes the copy sheet |
+| `platform-native` | Gary Vaynerchuk, *Jab, Jab, Jab, Right Hook* | Native content per platform: jabs and right hooks (about three to one), the six rules of great content, the right-hook checklist, trendjacking and community management. Writes the jab plan |
+| `brand-community` | Mark W. Schaefer, *Belonging to the Brand* | From followers to audience to community: purpose, gathering, questions, polls and replies, the ladder, status, RITES content, the sticker test and digital campfires. Writes the community plan |
+| `growth-experiments` | Sean Ellis & Morgan Brown, *Hacking Growth* | Whole-funnel growth: must-have survey, aha moment, North Star, ICE scoring, the weekly growth meeting, referral loops paid in core value, saveable assets, activation, retention and pricing. Writes the growth board |
+
 ## The front doors
 
 ### `writers-room`: any writing job
@@ -70,7 +83,19 @@ Each genre skill writes a sheet into the story folder's `02-design.md` before `s
 - settles the series conflicts (cliffhangers, recaps, vague canon vs. concrete prose, spoilers, prequel suspense);
 - ends with the canon updated and a **Skills fired** ledger.
 
-Both front doors are routers: they hold no craft principles of their own, so the 70/30 check verifies that they carry no source tags. Besides the fifteen skills here, they call skills from your claude.ai account (`viral-hooks`, `storytelling`, `dumbify`, `anti-ai-writing`, `storybrand`, `expert-secrets-playbook`, `sell-like-crazy`, `100m-offers`, `100m-money-models`, `seedance-shotlist-director`, `nonviolent-communication`, `habit-design`, `deep-work`). If one isn't installed where you run it, they skip it and say so.
+### `marketing-head`: any marketing, sales or social job
+
+`marketing-head` is the head of the marketing room. It:
+
+- writes a five-line marketing brief (goal, offer, audience, where, deliverable);
+- sorts the job into lanes: STRATEGY, CONTENT, COPY, CAMPAIGN, GROWTH, COMMUNITY, RETENTION, OFFER, NAME, VIDEO, RESEARCH;
+- fires the seven marketing skills above together with your account's marketing, sales and social skills (`viral-hooks`, `storytelling`, `dumbify`, `anti-ai-writing`, `storybrand`, `expert-secrets-playbook`, `sell-like-crazy`, `100m-offers`, `100m-money-models`, `name-craft`, `title-craft`, `seedance-shotlist-director`, plus research helpers), with an always-on core (`contagious-content`, `viral-hooks`, `style-audit`, `anti-ai-writing` last);
+- settles their conflicts (jab ratio, hook ownership, virality vs retention, paid vs organic, sharing incentives, long vs short, metrics, honesty);
+- ends with a **Skills fired** ledger.
+
+`writers-room` hands whole campaigns, calendars and growth plans to `marketing-head`, and `marketing-head` calls `writers-room` back for long-form writing.
+
+All three front doors are routers: they hold no craft principles of their own, so the 70/30 check verifies that they carry no source tags. Besides the skills here, they call skills from your claude.ai account (`viral-hooks`, `storytelling`, `dumbify`, `anti-ai-writing`, `storybrand`, `expert-secrets-playbook`, `sell-like-crazy`, `100m-offers`, `100m-money-models`, `seedance-shotlist-director`, `nonviolent-communication`, `habit-design`, `deep-work`). If one isn't installed where you run it, they skip it and say so.
 
 The pipeline order used by `story-forge` is:
 
@@ -78,7 +103,7 @@ brief → worldbuilding → genre sheet (if any) → story-design → reader-bra
 
 ## The rules these skills are built on
 
-1. **The books are 100% of the base.** Every principle in every skill traces to one of the fifteen books. Untagged lines are procedure only (steps, templates, file layouts), never outside craft advice.
+1. **The books are 100% of the base.** Every principle in every skill traces to one of the twenty-two books. Untagged lines are procedure only (steps, templates, file layouts), never outside craft advice.
 2. **Every principle carries a source tag** naming its book and chapter or section, e.g. `[McKee ch14]`, `[S&W R17]`, `[McPhee, Omission]`, `[Diamond ch14]`, `[Tomlinson ch4]`, `[Scheuerer ch13]`, `[Rosett, Troubleshooting]`, `[Highsmith ch5]`, `[Ligotti, Atmosphere]`, `[Uncanny, Royle]`, `[Watkins ch2]`, `[Edwards S6]`.
 3. **70/30 is counted, not guessed.** The spine book must supply between 65% and 75% of a skill's tagged principles. The count covers `SKILL.md` and `references/`.
 4. **Each skill has a "Where the books disagree" section.** When books conflict (plan vs. discover, fast draft vs. finished sentences, cliffhanger vs. closure, vague canon vs. concrete prose), the section names the conflict and states the resolution used. That section is left out of the count.
@@ -92,6 +117,7 @@ The newer books tag the same way:
 - ***Writing the Uncanny*** is an anthology, so its tags name the essayist, or Intro for the editors.
 - **Watkins** uses chapter numbers (ch1 SMILE to ch7 Name Changes), plus Preface, Intro and Resources.
 - **Edwards** numbers his chapters as "secrets", so his tags read S1 to S31, plus Intro, Q&A (his closing questions chapter) and Conclusion.
+- **The marketing books** use chapter numbers with Intro (and Epilogue or Conclusion where the book has one): `[Berger ch3]`, `[Eyal ch4]`, `[Kane ch5]`, `[Sugarman ch19]`, `[Schaefer ch10]`, `[Ellis ch6]`. Vaynerchuk calls his chapters rounds, so his tags read R1 to R12.
 - **Strunk's 1918 original** counts as the same book as *The Elements of Style*. Its tags carry the year, for example `[S&W 1918 R9]` or `[S&W 1918 V]` for its list of misused words.
 
 ## Checking the ratio
@@ -105,12 +131,19 @@ Current counts:
 
 | Skill | Spine | Spine / total | Share |
 |---|---|---|---|
+| audience-growth | Kane | 130 / 186 | 69.9% |
+| brand-community | Schaefer | 125 / 179 | 69.8% |
+| contagious-content | Berger | 113 / 162 | 69.8% |
 | cosmic-horror | Ligotti | 74 / 105 | 70.5% |
+| growth-experiments | Ellis & Brown | 170 / 242 | 70.2% |
+| habit-hooks | Eyal | 113 / 157 | 72.0% |
 | name-craft | Watkins | 105 / 150 | 70.0% |
+| platform-native | Vaynerchuk | 122 / 174 | 70.1% |
 | reader-brain | Cron | 50 / 72 | 69.4% |
 | revision-passes | McPhee | 58 / 85 | 68.2% |
 | sentence-craft | Klinkenborg | 41 / 59 | 69.5% |
 | sequel-craft | Scheuerer | 99 / 140 | 70.7% |
+| slippery-copy | Sugarman | 153 / 223 | 68.6% |
 | series-doctor | Rosett | 87 / 125 | 69.6% |
 | series-engine | Tomlinson | 116 / 165 | 70.3% |
 | story-design | McKee | 85 / 121 | 70.2% |
@@ -120,6 +153,7 @@ Current counts:
 | title-craft | Edwards | 95 / 137 | 69.3% |
 | uncanny-craft | Writing the Uncanny | 114 / 163 | 69.9% |
 | worldbuilding | Diamond | 67 / 97 | 69.1% |
+| marketing-head | router | 0 tags | routes only |
 | series-forge | router | 0 tags | routes only |
 | writers-room | router | 0 tags | routes only |
 
@@ -129,4 +163,4 @@ See the main [README](../README.md#writing-skills). Copy each skill directory in
 
 ## Relationship to other skills
 
-The seven story skills are for fiction and long-form prose. Each one's description points social-media work to `storytelling`, `viral-hooks` and `anti-ai-writing`, which keeps each skill's triggering clean. The three series skills sit one level up: they plan across books, and `story-forge` still writes each book. The three genre skills plug into `story-forge` at the design and revision stations, and the two naming skills work on their own or at the title stations of `story-forge` and `series-forge`. `writers-room` and `series-forge` are where all of them meet, each skill with a defined role.
+The seven story skills are for fiction and long-form prose. Each one's description points social-media work to `storytelling`, `viral-hooks` and `anti-ai-writing`, which keeps each skill's triggering clean. The three series skills sit one level up: they plan across books, and `story-forge` still writes each book. The three genre skills plug into `story-forge` at the design and revision stations, and the two naming skills work on their own or at the title stations of `story-forge` and `series-forge`. `writers-room` and `series-forge` are where all of them meet, each skill with a defined role. The seven marketing skills meet in `marketing-head`, and the social and persuasion lanes of `writers-room` borrow `platform-native`, `contagious-content` and `slippery-copy` for single pieces.

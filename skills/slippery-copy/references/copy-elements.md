@@ -1,0 +1,28 @@
+# The 23 Copy Elements
+
+Check each before the copy ships.
+
+- Typeface: legible above all. [Sugarman ch18]
+- First and second sentences: momentum. [Sugarman ch18]
+- Paragraph headings: ways in for scanners. [Sugarman ch18]
+- Product explanation: make complex things simple and simple things richer. [Sugarman ch18]
+- New features: say what's new. [Sugarman ch18]
+- Technical explanation: a little technical detail builds trust even if not fully understood. [Sugarman ch18]
+- Objections: anticipate and resolve them in the copy. [Sugarman ch18]
+- Audience: who exactly you're talking to. [Sugarman ch18]
+- Clarity: one meaning per sentence. [Sugarman ch18]
+- No clichés. [Sugarman ch18]
+- Rhythm: vary sentence length. [Sugarman ch18]
+- Service: say what happens after purchase. [Sugarman ch18]
+- Physical facts: size, weight, what's in the box. [Sugarman ch18]
+- Trial period: let them try. [Sugarman ch18]
+- Price comparison: show what else it would cost. [Sugarman ch18]
+- Testimonials: authentic only. [Sugarman ch18]
+- Price placement: big if it's a bargain, quieter if not. [Sugarman ch18]
+- Offer summary: restate what they get. [Sugarman ch18]
+- Don't say too much; stop when the sale is made. [Sugarman ch18]
+- Ease of ordering. [Sugarman ch18]
+- Ask for the order. [Sugarman ch18]
+- Credibility: answer "why you?", sometimes in five words. [Edwards S17]
+- Proof: truthful only. [Edwards S17]
+- Guarantee, then a P.S. that restates the benefit and the urgency. [Edwards S17]
