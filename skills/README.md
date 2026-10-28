@@ -156,6 +156,15 @@ Current counts:
 | marketing-head | router | 0 tags | routes only |
 | series-forge | router | 0 tags | routes only |
 | writers-room | router | 0 tags | routes only |
+| skill-forge | meta (exempt) | 0 tags | process, not principles |
+
+## The meta-skill (how these skills get built)
+
+| Skill | What it does |
+|---|---|
+| `skill-forge` | The workshop that turns a book into a skill the way this repo does it: one spine book at ~70%, named supports at ~30%, every principle paraphrased and source-tagged, split across a `SKILL.md` and `references/`, verified by `tools/check_70_30.py`, and wired into its router. Use it to add a new book-skill, fold a book into an existing one, or understand the 70/30 rule, the tags, the ledger and the checker. It builds the other skills, so it states process, not book principles, and carries no source tags. |
+
+See the full handover at [`HANDOVER.md`](../HANDOVER.md) for the state of the repo, the branch, and what's left to build.
 
 ## Installing
 

@@ -6,7 +6,9 @@ Personal Claude Code configuration, kept here so it can be restored on any devic
 
 - `settings.json` — global Claude Code settings: extra plugin marketplaces and which plugins are enabled.
 - `skills/` — twenty-two skills built from twenty-two books with a 70/30 rule (seven craft books for stories, three on writing series, three on suspense, horror and the uncanny, two on naming and titles, seven on marketing: virality, habits, audience growth, copy, platforms, community and growth experiments), plus three front doors that fire them together with your social, persuasion and video skills: `writers-room` for any writing job, `series-forge` for sequels, prequels and continuations, and `marketing-head` for any marketing, sales or social media job (see [`skills/README.md`](skills/README.md)).
+- `skills/skill-forge/` — the meta-skill: the workflow that turns a book into a 70/30 skill the way the rest of this repo was built. It builds the others.
 - `tools/check_70_30.py` — verifies each skill's 70/30 source ratio and ledger.
+- `HANDOVER.md` — the state of the repo, the working branch, and what's left to build. Read it first if you're picking this up.
 
 Deliberately **not** included (machine-specific or sensitive, and not needed for setup):
 - `.credentials.json` — OAuth token, never sync this
